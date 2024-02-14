@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Lyrics Nigeria</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="home">Home</string>
+    <string name="translated_lyrics">Translated Lyrics</string>
+    <string name="upload_lyrics">Upload Lyrics</string>
+    <string name="categories"><b>CATEGORIES</b></string>
+    <string name="afro_pop">Afro Pop</string>
+    <string name="gospel">Gospel</string>
+    <string name="hip_hop">Hip Hop</string>
+    <string name="r_and_b">R&amp;B</string>
+    <string name="more"><b>MORE</b></string>
+    <string name="about">About</string>
+    <string name="feedback">Send Feedback</string>
+    <string name="about_app_name"><b>App Name:</b>\nLyrics Nigeria: <i>Social &amp; Entertainment hub</i></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="featured_tab">Featured</string>
+    <string name="gist_tab">gist</string>
+    <string name="favourites_tab">Favourites</string>
+    <string name="search_lyrics">Search Lyrics</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="welcome_text">Please Sign In</string>
+    <string name="title_activity_sign_in">SignIn</string>
+    <string name="facebook_app_id">276200606479583</string>
+    <string name="fb_login_protocol_scheme">fb276200606479583</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="sign_in_note">By Signing In, you accept that you have read and agree to Lyrics Nigeria\'s Terms &amp; Conditions.</string>
+    <string name="genre">genre</string>
+    <string name="artist">artist</string>
+    <string name="headline">headline</string>
+    <string name="song">song</string>
+    <string name="content">content</string>
+    <string name="no_favourites_added">No Favourites Added</string>
+    <string name="search_song"><i>Search Song</i></string>
+    <string name="search_icon">search icon</string>
+    <string name="djhs_eula">By downloading any application from <b>dJh’s Studio</b> (here after referred to as “The Company”), installing or using this application or any portion thereof (“Application”), you agree to the following terms and conditions (the “Terms and Conditions”).\n\n
+<b>1. USE OF APPLICATION</b>\n
+a. The Company grants you the non-exclusive, non-transferable, limited right and license to install and use this Application solely and exclusively for your personal use.\n
+b. You may not use the Application in any manner that could damage, disable, overburden, or impair the Application (or servers or networks connected to the Application), nor may you use the Application in any manner that could interfere with any other party’s use and enjoyment of the Application (or servers or networks connected to the Application).\n
+c. You agree that you are solely responsible for (and that The Company has no responsibility to you or to any third party for) your use of the Application, any breach of your obligations under the Terms and Conditions, and for the consequences (including any loss or damage which The Company may suffer) of any such breach.\n\n
+<b>2. PROPRIETARY RIGHTS</b>\n
+You acknowledge that (a) the Application contains proprietary and confidential information that is protected by applicable intellectual property and other laws, and (b) The Company and/or third parties own all right, title and interest in and to the Application and content, excluding content provided by you, that may be presented or accessed through the Application, including without limitation all Intellectual Property Rights therein and thereto. “Intellectual Property Rights” means any and all rights existing from time to time under patent law, copyright law, trade secret law, trademark law, unfair competition law, and any and all other proprietary rights, and any and all applications, renewals, extensions and restorations thereof, now or hereafter in force and effect worldwide.\n
+You agree that you will not, and will not allow any third party to, (i) copy, sell, license, distribute, transfer, modify, adapt, translate, prepare derivative works from, decompile, reverse engineer, disassemble or otherwise attempt to derive source code from the Application or content that may be presented or accessed through the Application for any purpose, unless otherwise permitted, (ii) take any action to circumvent or defeat the security or content usage rules provided, deployed or enforced by any functionality (including without limitation digital rights management functionality) contained in the Application, (iii) use the Application to access, copy, transfer, transcode or retransmit content in violation of any law or third party rights, or (iv) remove, obscure, or alter The Company’s or any third party’s copyright notices, trademarks, or other proprietary rights notices affixed to or contained within or accessed in conjunction with or through the Application.\n\n
+<b>3. PRIVACY POLICY</b>\n
+The Privacy Policy describes how we treat personal information when you use this application. We use Google Analytics and/or third parties to collect data from, control and/or monitor computers and devices running or interacting with the Application. The data is collected anonymously and used to help us understand how customers engage with this application. It reports application trends without identifying individual customers. <b>dJh’s Studio</b> reserves the right to anonymously track and report your activity inside of our applications. <b>dJh’s Studio</b> will not share this information with other customers, or any third parties.\n\n
+<b>4. TERMINATION</b>\n
+These Terms and Conditions will continue to apply until terminated by either you or The Company as set forth below. You may terminate these Terms and Conditions at any time by permanently deleting the Application from your mobile device in its entirety. Your rights automatically and immediately terminate without notice from The Company or any Third Party if you fail to comply with any provision of these Terms and Conditions. In such event, you must immediately delete the Application.\n\n
+<b>5. INDEMNITY</b>\n
+To the maximum extent permitted by law, you agree to defend, indemnify and hold harmless The Company, its affiliates and their respective directors, officers, employees and agents from and against any and all claims, actions, suits or proceedings, as well as any and all losses, liabilities, damages, costs and expenses (including reasonable attorney fees) arising out of or accruing from your use of the Application, including your downloading, installation, or use of the Application, or your violation of these Terms and Conditions.\n\n
+<b>6. DISCLAIMER OF WARRANTIES</b>\n
+a. YOU EXPRESSLY UNDERSTAND AND AGREE THAT YOUR USE OF THE APPLICATION IS AT YOUR SOLE DISCRETION AND RISK AND THAT THE APPLICATION IS PROVIDED AS IS AND AS AVAILABLE WITHOUT WARRANTY OF ANY KIND.\n
+b. YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR MOBILE DEVICE, OR OTHER DEVICE, OR LOSS OF DATA THAT RESULTS FROM SUCH USE.\n
+c. THE COMPANY FURTHER EXPRESSLY DISCLAIMS ALL WARRANTIES AND CONDITIONS OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO THE IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT, WITH RESPECT TO THE APPLICATION.\n
+d. THE APPLICATION IS NOT INTENDED FOR USE IN THE OPERATION OF NUCLEAR FACILITIES, LIFE SUPPORT SYSTEMS, EMERGENCY COMMUNICATIONS, AIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL SYSTEMS, OR ANY OTHER ACTIVITIES IN WHICH THE FAILURE OF THE APPLICATION COULD LEAD TO DEATH, PERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE.\n\n
+<b>7. LIMITATION OF LIABILITY</b>\n
+YOU EXPRESSLY UNDERSTAND AND AGREE THAT THE COMPANY, ITS SUBSIDIARIES AND AFFILIATES, AND ITS LICENSORS ARE NOT LIABLE TO YOU UNDER ANY THEORY OF LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL CONSEQUENTIAL OR EXEMPLARY DAMAGES THAT MAY BE INCURRED BY YOU THROUGH YOUR USE OF THE APPLICATION, INCLUDING ANY LOSS OF DATA OR DAMAGE TO YOUR MOBILE DEVICE, WHETHER OR NOT THE COMPANY OR ITS REPRESENTATIVES HAVE BEEN ADVISED OF OR SHOULD HAVE BEEN AWARE OF THE POSSIBILITY OF ANY SUCH LOSSES ARISING.\n\n
+
+<b>8. MISCELLANEOUS</b>\n
+a. These Terms and Conditions constitute the entire Agreement between you and The Company relating to the Application and govern your use of the Application, and completely replace any prior or contemporaneous agreements between you and The Company regarding the Application.\n
+b. The failure of The Company to exercise or enforce any right or provision of these Terms and Conditions does not constitute a waiver of such right or provision, which will still be available to The Company.\n
+c. If any court of law, having the jurisdiction to decide on this matter, rules that any provision of these Terms and Conditions is invalid, then that provision will be removed from the Terms and Conditions without affecting the rest of the Terms and Conditions. The remaining provisions of these Terms and Conditions will continue to be valid and enforceable.\n
+d. The rights granted in these Terms and Conditions may not be assigned or transferred by either you or The Company without the prior written approval of the other party. Neither you nor The Company are permitted to delegate their responsibilities or obligations under these Terms and Conditions without the prior written approval of the other party.\n
+e. These Terms and Conditions and your relationship with The Company under these Terms and Conditions will be governed by the laws of Federal Republic of Nigeria without regard to its conflict of law provisions. You and The Company agree to submit to the exclusive jurisdiction of the courts located within the Federal Republic of Nigeria to resolve any legal matter arising from these Terms and Conditions. Notwithstanding this, you agree that The Company will still be allowed to apply for injunctive remedies (or an equivalent type of urgent legal relief) in any jurisdiction.
+</string>
+    <string name="eula"><b>End User License Agreement</b></string>
+    <string name="about_app_features"><b>App Features:</b>\nNigerian Social &amp; Entertainment App.\nGet the Lyrics of your favourite songs.\nFind English Translations for Various Local Nigerian Songs.\nGet the latest gist around Nigeria.\nChat and Socialize with others.\nWatch the latest Nigerian Music Videos.</string>
+    <string name="about_app_version"><b>Version:</b>\n1.06.12</string>
+    <string name="app_developer"><b>Developer:</b>\ndJh\'s Studio</string>
+    <string name="fdb_subject">Subject:</string>
+    <string name="fdb_enter_subject"><i>Enter Subject</i></string>
+    <string name="fdb_feedback_request">Feedback/Request:</string>
+    <string name="fdb_message"><i>Message</i></string>
+    <string name="fdb_send">Send</string>
+    <string name="uploader">uploader</string>
+    <string name="no_translations_submitted">No Translations Submitted</string>
+    <string name="title_activity_gist">GistActivity</string>
+    <string name="log_in_with_twitter">Log in with Twitter</string>
+    <string name="title_activity_bottom_nav">BottomNavActivity</string>
+    <string name="title_home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="news">News</string>
+    <string name="videos">Videos</string>
+    <string name="lyrics">Lyrics</string>
+    <string name="chat">Chat</string>
+    <string name="lyrics_videos">Lyrics</string>
+    <string name="music_videos">Music</string>
+    <string name="random_videos">Random</string>
+    <string name="entertainment_news">Entertainment</string>
+    <string name="other_news">Other News</string>
+    <string name="translated">Translated</string>
+    <string name="hot">HOT&#x21;</string>
+    <string name="share_button">Share Button</string>
+    <string name="play_button">Play Button</string>
+    <string name="stop_button">Stop Button</string>
+    <string name="hello">Hello,</string>
+    <string name="ent_rooms">Entertainment</string>
+    <string name="fun_rooms">Fun</string>
+    <string name="other_rooms">Others</string>
+    <string name="chat_rooms">Chat Rooms</string>
+    <string name="start_typing"><i>Start typing…</i></string>
+    <string name="send_message">Be the first to say Hi…</string>
+    <string name="create_new_room">Create New Room</string>
+    <string name="enter_category">Enter Category</string>
+    <string name="enter_topic">Enter Topic</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="reveal_text">reveal_text</string>
+    <string name="_00_00">00:00</string>
+    <string name="bright_theme">Day Mode</string>
+    <string name="dark_theme">Night Mode</string>
+    <string name="_0">0</string>
+    <string name="reset">Reset</string>
+    <string name="extras">Extras</string>
+    <string name="theme">Theme</string>
+    <string name="communicate">Communicate</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share_lyrics_nigeria_with_friends">Share Lyrics Nigeria</string>
+    <string name="sign_in">Sign In</string>
+    <string name="admob_app_id">ca-app-pub-5242580240582734~6873769656</string>
+</resources>

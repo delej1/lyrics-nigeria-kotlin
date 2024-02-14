@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chatlistview_parent"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:elevation="80dp"
+    android:orientation="vertical"
+    android:layout_marginTop="1dp"
+    app:cardBackgroundColor="?attr/color9">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/chat_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:layout_margin="8dp"
+        android:layout_centerVertical="true"
+        android:textColor="?attr/colorText"/>
+
+        <TextView
+            android:id="@+id/chat_topic"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:layout_toRightOf="@+id/chat_category"
+            android:layout_toEndOf="@+id/chat_category"
+            android:layout_centerVertical="true"
+            android:textColor="?attr/colorText"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/notification_dot"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@drawable/notification_dot"
+            android:layout_toLeftOf="@+id/chat_bubble"
+            android:layout_toStartOf="@+id/chat_bubble"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/chat_bubble"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/chat_bubble"
+            android:layout_toLeftOf="@+id/chat_count"
+            android:layout_toStartOf="@+id/chat_count"
+            android:layout_alignParentBottom="true" />
+        <TextView
+            android:id="@+id/chat_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/_0"
+            android:padding="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="?attr/colorText"/>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

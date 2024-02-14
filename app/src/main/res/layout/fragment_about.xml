@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/color4"
+    android:orientation="vertical"
+    tools:context=".AboutFragment">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/about_app_name"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="?attr/colorText"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/about_app_features"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="?attr/colorText"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/about_app_version"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="?attr/colorText"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/app_developer"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="?attr/colorText"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/eula"
+                    android:textSize="16sp"
+                    android:textColor="?attr/colorText"/>
+
+                <ImageView
+                    android:id="@+id/expand_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_expand_more"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_text_border"
+                    android:contentDescription="@string/reveal_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/eula_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="8dp"
+                    android:text="@string/djhs_eula"
+                    android:textSize="14sp"
+                    android:textColor="?attr/colorText"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

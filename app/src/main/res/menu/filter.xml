@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/afro_pop"
+        android:title="@string/afro_pop" />
+    <item
+        android:id="@+id/gospel"
+        android:title="@string/gospel" />
+    <item
+        android:id="@+id/hip_hop"
+        android:title="@string/hip_hop" />
+    <item
+        android:id="@+id/r_b"
+        android:title="@string/r_and_b" />
+    <item
+        android:id="@+id/reset"
+        android:title="@string/reset" />
+</menu>

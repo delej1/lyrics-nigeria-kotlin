@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/fragment_chat"
+    tools:context=".ChatFragment"
+    android:background="?attr/color4">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorBackground"
+        app:tabTextColor="@color/colorBlack"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextAppearance="@style/tab_text"
+        app:tabIndicatorColor="@color/colorBlack"
+        app:tabIndicatorHeight="0dp"
+        android:layout_gravity="center_horizontal|center_vertical">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ent_rooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chat_rooms" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/chat_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:overScrollMode="never">
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

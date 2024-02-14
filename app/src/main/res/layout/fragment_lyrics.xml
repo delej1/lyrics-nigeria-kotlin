@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/fragment_lyrics"
+    tools:context=".LyricsFragment"
+    android:background="?attr/color4">
+
+<com.google.android.material.tabs.TabLayout
+    android:id="@+id/tabs_lyrics"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorBackground"
+    app:tabTextColor="@color/colorBlack"
+    app:tabSelectedTextColor="@color/colorPrimary"
+    app:tabTextAppearance="@style/tab_text"
+    app:tabIndicatorColor="@color/colorBlack"
+    app:tabIndicatorHeight="0dp"
+    app:tabGravity="fill">
+
+    <com.google.android.material.tabs.TabItem
+        android:id="@+id/hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hot"/>
+
+    <com.google.android.material.tabs.TabItem
+        android:id="@+id/featured"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/featured_tab" />
+
+    <com.google.android.material.tabs.TabItem
+        android:id="@+id/translated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/translated" />
+
+</com.google.android.material.tabs.TabLayout>
+
+<androidx.viewpager.widget.ViewPager
+    android:id="@+id/lyrics_viewpager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:overScrollMode="never">
+</androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+}
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'LN'
+            keyPassword 'driver444'
+            storeFile file('/Users/dele/StudioProjects/LyricsNigeria_1.06.12/LyricsNigeria.jks')
+            storePassword 'driver444'
+        }
+    }
+    compileSdkVersion 33
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.lyricsnigeria.lyricsnigeria"
+        minSdkVersion 17
+        targetSdkVersion 33
+        versionCode 12
+        versionName "1.06"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            //useProguard false
+            //shrinkResources true
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+            useProguard false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.navigation:navigation-fragment:2.1.0'
+    implementation 'androidx.navigation:navigation-ui:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.1.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.drawerlayout:drawerlayout:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'org.jetbrains.anko:anko-common:0.8.3'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.firebase:firebase-core:17.2.1'
+    implementation 'com.google.firebase:firebase-auth:19.1.0'
+    implementation 'com.google.firebase:firebase-database:19.2.0'
+    implementation 'com.google.firebase:firebase-firestore:21.2.1'
+    implementation 'com.google.firebase:firebase-storage:19.1.0'
+    implementation 'com.firebaseui:firebase-ui-database:2.1.0'
+    implementation 'com.facebook.android:facebook-android-sdk:5.5.1'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.github.GrenderG:Toasty:1.3.0'
+    implementation 'com.google.android.exoplayer:exoplayer-core:r2.5.2'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:r2.5.2'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:r2.5.2'
+    implementation 'com.google.firebase:firebase-messaging:20.0.0'
+    implementation 'com.google.firebase:firebase-inappmessaging-display:19.0.1'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'com.google.firebase:firebase-analytics:17.2.1'
+    implementation 'com.twitter.sdk.android:twitter-core:3.1.1'
+    implementation 'com.google.android.play:core:1.6.4'
+    implementation 'com.github.javiersantos:AppUpdater:2.7'
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.4'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation "androidx.preference:preference-ktx:1.1.0"
+    implementation 'com.google.firebase:firebase-ads:18.3.0'
+    implementation 'com.google.ads.mediation:facebook:5.6.0.0'
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'com.facebook.android:audience-network-sdk:5.6.0'
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ln_theme"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/blank_portrait" />
+
+    <TextView
+        android:id="@+id/nav_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:maxLines="1"
+        android:layout_toEndOf="@+id/user_pic"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/nav_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_toEndOf="@+id/user_pic"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/nav_username"
+        android:layout_toRightOf="@+id/user_pic"/>
+
+    <ImageView
+        android:id="@+id/nav_expand_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_expand_more"
+        android:layout_below="@+id/nav_email"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/edit_text_border"
+        android:contentDescription="@string/reveal_text" />
+
+    <TextView
+        android:id="@+id/nav_signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:maxLines="1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sign_out"
+        android:layout_below="@+id/nav_email"
+        android:layout_marginTop="16dp"
+        android:padding="6dp"
+        android:background="@drawable/nav_signout"
+        android:elevation="2dp"
+        android:textColor="@color/colorBlack"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

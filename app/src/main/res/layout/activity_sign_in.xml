@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/color4"
+    android:id="@+id/main_layout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignIn">
+
+    <include
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:overScrollMode="never">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ln_img"
+                android:layout_marginTop="32dp"
+                android:layout_height="132dp"
+                android:layout_width="wrap_content"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/sign_in_txt"
+                android:textColor="?attr/colorText"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/welcome_text"
+                android:textSize="22sp"
+                android:layout_below="@+id/ln_img"
+                android:layout_centerInParent="true"/>
+
+
+            <com.google.android.gms.common.SignInButton
+                android:elevation="20dp"
+                android:id="@+id/google_button"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_width="240dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/sign_in_txt"/>
+
+            <Button
+                android:background="@color/com_facebook_blue"
+                android:elevation="50dp"
+                android:id="@+id/facebook_button"
+                android:layout_height="32dp"
+                android:layout_marginTop="40dp"
+                android:layout_width="240dp"
+                android:text="@string/continue_with_facebook"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/google_button"/>
+
+            <Button
+                android:background="@color/color7"
+                android:id="@+id/twitter_button"
+                android:layout_width="240dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp"
+                android:elevation="50dp"
+                android:layout_below="@+id/facebook_button"
+                android:text="@string/log_in_with_twitter"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"/>
+
+
+                <TextView
+                    android:id="@+id/sign_in_note"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="24dp"
+                    android:text="@string/sign_in_note"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/twitter_button"
+                    android:layout_marginTop="40dp"
+                    android:textColor="?attr/colorText"/>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

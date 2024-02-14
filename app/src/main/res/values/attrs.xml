@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ds">
+        <attr name="colorPrimary" format="color"/>
+        <attr name="colorPrimaryDark" format="color"/>
+        <attr name="colorAccent" format="color"/>
+        <attr name="colorBackground" format="color"/>
+        <attr name="colorBackgroundTwo" format="color"/>
+        <attr name="color10" format="color"/>
+        <attr name="color9" format="color"/>
+        <attr name="colorText" format="color"/>
+        <attr name="color8" format="color"/>
+        <attr name="colorHyperLink" format="color"/>
+        <attr name="colorTextBorder" format="color"/>
+        <attr name="color1" format="color"/>
+        <attr name="color2" format="color"/>
+        <attr name="color3" format="color"/>
+        <attr name="color4" format="color"/>
+        <attr name="color5" format="color"/>
+        <attr name="color6" format="color"/>
+        <attr name="color7" format="color"/>
+    </declare-styleable>
+</resources>

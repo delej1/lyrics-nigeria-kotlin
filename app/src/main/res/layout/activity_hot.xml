@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/color4"
+    android:keepScreenOn="true"
+    tools:context=".HotActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="85dp"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/cover_hot_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"/>
+
+                <TextView
+                    android:id="@+id/artist_hot_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_below="@+id/cover_hot_activity"
+                    android:textColor="?attr/colorText"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/song_hot_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/artist_hot_activity"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:textColor="?attr/colorText"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/uploader_hot_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/song_hot_activity"
+                    android:padding="8dp"
+                    android:textColor="?attr/colorText"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:layout_alignParentEnd="true"
+                    android:textAlignment="textEnd"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/hot_body"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="5dp"
+                android:padding="4dp"
+                android:layout_marginTop="24dp"
+                android:textAlignment="center"
+                android:textColor="?attr/colorText"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/beat_hot_activity"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ImageView
+        android:id="@+id/hot_share_btn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_above="@+id/hot_btn_case"
+        android:layout_margin="20dp"
+        android:contentDescription="@string/share_button"
+        android:padding="5dp"
+        android:src="@drawable/share_btn" />
+
+    <RelativeLayout
+        android:id="@+id/hot_btn_case"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color6"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/current_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/exo_seekbar"
+            android:text="@string/_00_00" />
+
+        <TextView
+            android:id="@+id/duration_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@+id/exo_seekbar"
+            android:text="@string/_00_00" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/exo_seekbar"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="2dp"
+            app:scrubber_color="@color/colorPrimary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exo_seekbar"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/hot_restart_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@drawable/ic_repeat_black_24dp" />
+
+            <ImageView
+                android:id="@+id/hot_rewind_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@drawable/ic_fast_rewind_black_24dp" />
+
+            <ImageView
+                android:id="@+id/hot_pause_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_pause_black_24dp" />
+
+            <ImageView
+                android:id="@+id/hot_play_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
+
+            <ImageView
+                android:id="@+id/hot_fast_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@drawable/ic_fast_forward_black_24dp" />
+
+            <ImageView
+                android:id="@+id/hot_stop_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/ic_stop_black_24dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

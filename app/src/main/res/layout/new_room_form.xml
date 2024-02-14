@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/new_room_form"
+    android:layout_width="240dp"
+    android:layout_height="240dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/new_room_bg"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/new_room_txtview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/create_new_room"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_room_txtview"
+        android:layout_margin="20dp"
+        android:background="@drawable/edit_text_bg2"
+        android:hint="@string/enter_category"
+        android:maxLines="1"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_margin="20dp"
+        android:background="@drawable/edit_text_bg2"
+        android:hint="@string/enter_topic"
+        android:maxLines="1"
+        android:padding="5dp" />
+</RelativeLayout>

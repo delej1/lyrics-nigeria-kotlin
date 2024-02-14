@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/youtube_player_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    app:showYouTubeButton="true"
+    app:autoPlay="false"
+    app:showFullScreenButton="true"
+    app:showSeekBar="true"
+    app:showVideoDuration="true"
+    app:showVideoCurrentTime="true">
+
+    <TextView
+        android:id="@+id/video_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        android:layout_margin="4dp"/>
+
+</com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>

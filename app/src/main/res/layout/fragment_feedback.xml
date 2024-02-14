@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/color4"
+    android:orientation="vertical"
+    tools:context=".FeedbackFragment">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginTop="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/fdb_subject"
+                    android:textSize="16sp"
+                    android:textColor="?attr/colorText"/>
+
+                <EditText
+                    android:id="@+id/feedback_subject"
+                    android:hint="@string/fdb_enter_subject"
+                    android:inputType="textCapWords"
+                    android:layout_width="256dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_bg"
+                    android:padding="8dp"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:textColor="@color/colorBlack"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginTop="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/fdb_feedback_request"
+                    android:textSize="16sp"
+                    android:textColor="?attr/colorText"/>
+
+                <EditText
+                    android:id="@+id/feedback_msg"
+                    android:hint="@string/fdb_message"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:layout_width="match_parent"
+                    android:layout_height="304dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:padding="8dp"
+                    android:textSize="14sp"
+                    android:gravity="top"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/colorBlack"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="6dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp">
+                <Button
+                    android:id="@+id/feedback_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fdb_send"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

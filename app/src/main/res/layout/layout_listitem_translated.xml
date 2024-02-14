@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/listview_parent_translated"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:elevation="80dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="?attr/color9">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/trans_music_cover"
+            android:layout_width="96dp"
+            android:layout_height="96dp"/>
+
+        <TextView
+            android:id="@+id/trans_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textStyle="italic"
+            android:textColor="?attr/colorText"/>
+
+        <TextView
+            android:id="@+id/trans_artist"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toRightOf="@+id/trans_music_cover"
+            android:layout_toEndOf="@+id/trans_music_cover"
+            android:paddingTop="16dp"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="?attr/colorText"/>
+
+        <TextView
+            android:id="@+id/trans_song_title"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toRightOf="@+id/trans_music_cover"
+            android:layout_toEndOf="@+id/trans_music_cover"
+            android:paddingTop="40dp"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="?attr/colorText"/>
+
+        <TextView
+            android:id="@+id/trans_uploader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textStyle="italic"
+            android:layout_alignBottom="@id/trans_music_cover"
+            android:textColor="?attr/colorText"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ln_theme"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/nav_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:maxLines="1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sign_in"
+        android:layout_marginTop="16dp"
+        android:padding="6dp"
+        android:background="@drawable/nav_signout"
+        android:elevation="2dp"
+        android:textColor="@color/colorBlack"/>
+</RelativeLayout>

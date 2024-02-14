@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_favourites"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavouritesFragment"
+    android:orientation="vertical"
+    android:background="?attr/color4">
+
+    <TextView
+        android:id="@+id/favourites_no_added"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:text="@string/no_favourites_added"
+        android:visibility="gone"
+        android:textColor="?attr/colorText"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textStyle="italic"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favourites_recycler_view"
+        class="android.support.v7.app.AlertController$RecycleListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

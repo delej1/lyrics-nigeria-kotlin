@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "660779536213",
+    "firebase_url": "https://lyricsnigeria-210312.firebaseio.com",
+    "project_id": "lyricsnigeria-210312",
+    "storage_bucket": "lyricsnigeria-210312.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660779536213:android:e9171e81c7baa020",
+        "android_client_info": {
+          "package_name": "com.lyricsnigeria.lyricsnigeria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660779536213-o191gc78c203u5ilrsvd2tgjujoiccsp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lyricsnigeria.lyricsnigeria",
+            "certificate_hash": "d3f71f381cdaa501158c9cca78510b1c5681c0ff"
+          }
+        },
+        {
+          "client_id": "660779536213-kqn7k8k6h7lmrmvh6upp2gs1uij9t56k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lyricsnigeria.lyricsnigeria",
+            "certificate_hash": "636186bb2f24611798eb852a1a687d84138e4df1"
+          }
+        },
+        {
+          "client_id": "660779536213-q8vkj4kuu01o5klp3h2un0brermc4op2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ5IX13r6B_poP7J-uRiF2eHOI1GYXxaw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660779536213-q8vkj4kuu01o5klp3h2un0brermc4op2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
